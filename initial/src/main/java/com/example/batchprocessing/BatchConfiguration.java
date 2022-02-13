@@ -36,9 +36,7 @@ public class BatchConfiguration {
                 .delimited()
                 .names(new String[]{"firstName", "lastName"})
                 .fieldSetMapper(new BeanWrapperFieldSetMapper<Person>() {
-                    {
-                        setTargetType(Person.class);
-                    }
+                    {setTargetType(Person.class);}
                 })
                 .build();
     }
